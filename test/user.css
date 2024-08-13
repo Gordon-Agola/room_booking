@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reset */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body
+{
+  line-height: 1.7em;
+}
+
+h1, h2, h3
+{
+  padding-bottom: 20px;
+}
+
+p
+{
+  margin: 10px 0;
+}
+header
+{
+ /* background-color: hsla(0, 0%, 15%, 1);
+  color: hsla(360, 100%, 100%, 1); */
+  top:0;
+  left:0;
+  width: 100%;
+}
+
+.container
+{
+  margin: auto;
+  
+  max-width: 1100px; /* This is the key, to bring elements together, and not spreaded*/
+  
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.text-primary
+{
+  color: hsla(30, 87%, 75%, 1);
+}
+
+.lead
+{
+  font-size: 20px;
+}
+
+.btn
+{
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: hsla(360, 100%, 100%, 1);
+  text-decoration: 0;
+  padding: 13px 30px;
+  background: hsla(0, 0%, 20%, 1);
+  border-radius: 40px;
+  letter-spacing: 0.15em;
+  border: 1px solid hsla(0, 0%, 20%, 1);
+  cursor: pointer;
+}
+
+.btn:hover
+{
+  background: hsla(30, 87%, 75%, 1);
+  border: 1px solid hsla(30, 87%, 65%, 1);
+  color: hsla(0, 0%, 20%, 1);
+}
+
+.bg-dark
+{
+  background-color: hsla(0, 0%, 15%, 1);
+  color: hsla(360, 100%, 100%, 1);
+}
+
+.bg-light
+{
+  background-color: hsla(360, 100%, 100%, 1);
+  color: hsla(0, 0%, 15%, 1);
+}
+
+.bg-primary
+{
+  color: hsla(0, 0%, 15, 1);
+  background: hsla(30, 87%, 75%, 1);
+}
+
+.btn-light
+{
+  background: hsla(0, 0%, 96%, 1);
+  color: hsla(0, 0%, 15%, 1);
+  border: 1px solid hsla(0, 0%, 96%, 1);
+}
+
+/* Clears formatting from blocks above */
+
+.clr
+{
+  clear: both;
+}
+
+/* Navbar */
+#navbar
+{
+  /* display: flex; */
+  width: 100%;
+  align-items: center;
+  overflow: auto;
+}
+
+#navbar a
+{
+  color: hsla(360, 100%, 100%, 1);
+  text-decoration: 0;
+}
+
+#navbar h1
+{
+  float: left;
+  padding-top: 20px;
+  font-size: 34px;
+}
+
+/* align it right */
+#navbar ul
+{
+  list-style: none;
+  float: right;
+}
+
+/* horizontal instead of vertical */
+#navbar ul li
+{
+  float: left;
+}
+
+/* push it down */
+#navbar ul li a
+{
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover
+{
+  background-color: hsla(0, 0%, 25%, 1);
+  color: hsla(30, 87%, 75%, 1);
+}
+
+#navbar ul li a.active
+{
+  background-color: hsla(0, 0%, 25%, 1);
+}
+
+#navbar .logo
+{
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Showcase */
+#showcase
+{
+  background: url("https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat center center/cover;
+  height: 600px;
+}
+
+#showcase .showcase-content
+{
+  color: hsla(360, 100%, 100%, 1);
+  text-align: center;
+  padding-top: 170px;
+}
+
+#showcase .showcase-content h1
+{
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+#showcase .showcase-content p
+{
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+/* Home info */
+
+#home-info
+{
+  height: 400px;
+}
+#home-info1
+{
+  height: fit-content;
+  margin-bottom: 80px;
+  padding: 20px;
+}
+#home-info .info-image
+{
+  width: 50%;
+  float: left;
+  background: url("https://images.pexels.com/photos/3663530/pexels-photo-3663530.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat;
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+ /* object-fit: cover; */
+  overflow: hidden;
+  background-position: 0px -250px;
+}
+
+#home-info .info-content
+{
+  width: 50%;
+  float: right;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+#home-info .info-content a
+{
+  margin-top: 20px;
+}
+
+/* Features */
+#features
+{
+  height: 300px;
+  display: flex;
+  text-align: center;
+  overflow: hidden;
+}
+
+#features .location
+{
+  width: 33%;
+  float: left;
+}
+
+#features i
+{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#features p
+{
+  padding: 0 10px;
+}
+
+#features .meals
+{
+  width: 33%;
+}
+
+#features .fitness
+{
+  width: 33%;
+  float: right;
+}
+
+/* Footer */
+#main-footer
+{
+  display: relative;
+  text-align: center;
+  padding: 20px;
+  background: hsla(0, 0%, 25%, 1);
+  color: hsla(360, 100%, 100%, 1)
+}
+
+
+
+/* Custom css */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
