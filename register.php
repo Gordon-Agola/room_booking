@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if ($result_email->num_rows > 0) {
                 $error = "This email is already associated with another account.";
-            } else {
+            } else {h0,c6 
                 // Insert the new user into the database
                 $sql = "INSERT INTO users (username, password, email) VALUES ('$username', '$hashed_password', '$email')";
 
